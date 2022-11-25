@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="FormStyle.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Contact form <i class="fa-solid fa-address-book"> </i></legend>
+            
+            <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+            <form action="https://formsubmit.co/2fabf8fd802b68c520cc32496b9d2f45" method="POST">
+                
+                <!-- honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- This is essential to make the success mail work -->
+                <Input type="hidden" name="_next" value="https://dartist180.github.io/FormSubmitUEAProject/success.html">
+
+                <p>required information is marked with an asterisk (*)</p>
+                <label for ="firstName">First Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="firstName" name="First Name" placeholder="Your Name" required>
+                <label for ="lastName">Last Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="lastName" name="Last Name" placeholder="Your Name" required>
+                <label for ="email">Email* <i class="fa-regular fa-envelope"> :</i></label>
+                <input type="email" id="email" name="E-Mail" placeholder="Email id" required>
+                <label for ="phone">Phone* <i class="fa fa-phone"> :</i></label>
+                <input type="text" id="phone" name="Phone Number" placeholder="Phone no." required>
+                <label for ="message">Message* <i class="fa-regular fa-message"> :</i></label>
+                <textarea type="text" id="message" rows="4" name="Message" placeholder="How can we help you?" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </fieldset>
+    </div>
+</body>
+</html>
