@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+header {
+    height: 100px;
+    background-color: #354F52;
+}
+header h1 {
+    text-align: left;
+    display: inline-block;
+    padding: 17px;
+    line-height: 200%;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#menu {
+    list-style-type: none;
+}
+main {
+    text-align: center;
+    
+}
+.mainImg {
+    object-fit: cover;
+    max-width: 100%;
+}
+section {
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#welcome {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-weight:800px;
+    
+}
+nav {
+    height: 50px;
+    text-align:center;
+    display: inline-block;
+    padding: 16px;
+}
+.nav {
+    display: inline-block;
+    margin-top: 0;
+    padding: 24px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #CAD2C5;
+}
+footer {
+    background-color: #354F52;
+    font-size: 0.7em;
+    text-align: center;
+    color: white;
+    padding: 16px;
+}
+.btn {
+    display: inline-block;
+    background-color: #354F52;
+    border: none;
+    color:white;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-bottom: 14px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
