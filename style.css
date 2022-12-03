@@ -277,7 +277,7 @@ a:hover {
     left: 0;
     right: 0;
     background-size: cover;
-    background-image: url('images/Pollution.jpeg');
+    background-image: url('Images/Pollution.jpeg');
     background-position: center;
     animation: 8s slideIn ease-in-out forwards;
 }
@@ -395,7 +395,7 @@ a:hover {
 }
 
 .chapters {
-    background-image: url("images/Pollution2.jpeg");
+    background-image: url("Images/Pollution2.jpeg");
     animation: 2s slideIn ease-in-out forwards;
     flex-direction: row;
     align-items: flex-end;
@@ -445,7 +445,7 @@ a:hover {
 .feature .FixedSize {
     width: auto;
     height: 300px;
-    background-image: url('images/Home.jpeg');
+    background-image: url('Images/Home.jpeg');
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
@@ -454,15 +454,15 @@ a:hover {
 }
 
 .feature .fe-box:nth-child(3) .FixedSize {
-    background-image: url('images/Chapters.jpeg');
+    background-image: url('Images/Chapters.jpeg');
 }
 
 .feature .fe-box:nth-child(4) .FixedSize {
-    background-image: url('images/Contact.jpeg');
+    background-image: url('Images/Contact.jpeg');
 }
 
 .feature .fe-box:nth-child(5) .FixedSize {
-    background-image: url('images/Team.jpeg');
+    background-image: url('Images/Team.jpeg');
 }
 
 
@@ -583,7 +583,7 @@ a:hover {
 #confirmMember3,
 #confirmMember4 {
     display: none;
-    background-image: url('images/backgroundgreen.jpeg');
+    background-image: url('Images/backgroundgreen.jpeg');
     background-size: cover;
     background-position: right;
     border: 6px solid var(--color-border);
@@ -632,7 +632,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('images/leaf.jpeg');
+    background-image: url('Images/leaf.jpeg');
     width: 100%;
     height: 60vh;
     background-size: cover;
@@ -939,7 +939,7 @@ fieldset {
     border: 20px solid var(--color-backgroundheader);
     border-radius: 10px;
     background-color: transparent;
-    /* background-image: url('images/backgroundgreen.jpeg'); */
+    /* background-image: url('Images/backgroundgreen.jpeg'); */
     /* background-size: cover;
     background-position: center; */
 }
