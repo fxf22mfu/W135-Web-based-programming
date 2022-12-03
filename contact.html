@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f75b4eb6a9.js" crossorigin="anonymous"></script>
     
@@ -16,7 +16,7 @@
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li id="Content"><a href="content.html">Content</a>
                     <ul id="navbarContent" class="navbar2">
                         <li><a href="chapter7.html">Chapter 7: Fuel Supply</a></li>
@@ -24,11 +24,10 @@
                         <li><a href="chapter13.html">Chapter 13: Engineered Removals</a></li>
                     </ul>
                 </li>
-                <li id="Contact"><a href="contact.html" >Contact Us</a></li>
+                <li id="Contact"><a href="contact.html" class="active">Contact Us</a></li>
                 <li id="Team"><a href="Team.html">About Us</a>
                 </li>
                 <a href="#" id="close"><i class="fa-regular fa-circle-xmark"></i></a>
-                
             </ul>
         </div>
 
@@ -37,58 +36,41 @@
         </div>
         
     </section>
-    
-    <section class='StartAnimation'>
-        <div class="ComeFirst">
-            <h1 class="H1Nr1">Climate</h1>
-            <h1 class="H1Nr2">Monitoring</h1>
-            <h1 class="H1Nr3">People</h1>
-            <div class="overlay2"></div>
-            <div class="overlay"></div>
+
+
+
+    <section class="containerForm startBanner">
+        <fieldset>
+            <legend>Contact form <i class="fa-solid fa-address-book"> </i></legend>
             
-        </div>
-        <div class="ComeSecond">
-            <section>Information 
-            <span id=flip>
-                <div><div>Pollution</div></div>
-                <div><div>Contact US</div></div>
-                <div><div>About Us</div></div>
-            </span>
-            Enjoy!</section> 
-        </div>
+            <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+            <form action="https://formsubmit.co/2fabf8fd802b68c520cc32496b9d2f45" method="POST">
+                
+                <!-- honeypot -->
+                <input type="text" name="_honey" style="display: none;">
 
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- This is essential to make the success mail work -->
+                <Input type="hidden" name="_next" value="https://dartist180.github.io/FormSubmitUEAProject/success.html">
+
+                <p>required information is marked with an asterisk (*)</p>
+                <label for ="firstName">First Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="firstName" name="First Name" placeholder="Your Name" required>
+                <label for ="lastName">Last Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="lastName" name="Last Name" placeholder="Your Name" required>
+                <label for ="email">Email* <i class="fa-regular fa-envelope"> :</i></label>
+                <input type="email" id="email" name="E-Mail" placeholder="Email id" required>
+                <label for ="phone">Phone* <i class="fa fa-phone"> :</i></label>
+                <input type="text" id="phone" name="Phone Number" placeholder="Phone no." required>
+                <label for ="message">Message* <i class="fa-regular fa-message"> :</i></label>
+                <textarea type="text" id="message" rows="4" name="Message" placeholder="How can we help you?" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </fieldset>
     </section>
-
-    <section class="textContainer">
-        <div>
-            <h3>What is this website about?</h3>
-            <p>
-                Die Copa de Dartist ist neben der PDC World Darts Championship das bedeutendste Ereignis des Dartsports. 
-                Die Copa bietet Platz für bis zu 64 AthletInnen, die sich zunächst in einer spannenden Gruppenphase beweisen müssen. 
-                Wurde diese erfolgreich gemeistert, sind besonderes Geschick und Ausdauer in den darauffolgenden KO-Spielen der Hauptrunde erforderlich. 
-                Gespielt wird dabei das gesamte Turnier über der Copa-spezifische Modus Best of 3 Legs / 301 mit Double Out. 
-                Dies hat den Vorteil, dass die Wahrscheinlichkeit eines Sieges des eigentlich besseren Dartsportlers, der sich auf Dauer i.d.R. durchsetzen würde, leicht verringert wird. 
-                Dadurch kann der vermeintliche Underdog jederzeit den wichtigen Lucky Punch setzen.
-                Für welchen Dartsportler die Chancen eines Finalsieges am größten sind, können Buchmacher demnach erfahrungsgemäß nicht prognostizieren.
-                Dies garantiert Spannung bis zum Ende. 
-                <br>
-                <br>
-                Tatsächlich handelt es sich bei der Copa um ein regelmäßig stattfindendes Turnier auf Amatuernievau, dessen AthletInnen i.d.R. entweder einäugig oder -armig sind. 
-                Die treusten SportlerInnen der Copa kommen vor allem für die gute Stimmung und das leckere Bier, das uns Martina liebevoll zapft und ausschenkt. 
-                Unsere AthletInnen sprechen sich übrigens nur mit Dart-Namen an. 
-                Ein Copa-Phänomen ist daher auch, dass viele der SportlerInnen die bürgerlichen Namen ihrer Konkurrenten i.d.R. nicht kennen. 
-                <br>
-                <br>
-                Mit der Buchung der Copa kannst Du Dich also auf eine feuchtfröhliche Sportveranstaltung mit guter Stimmung und geilen AthletInnen freuen. 
-                Man könnte sagen, dass die Copa eine Kombination aus sportlichem Spektakel und einer geselligen Dartmosphäre am Oche verspricht. 
-                Wenn Du also kein besonders guter Darter bist, aber Bier magst, bist Du bei uns genau richtig!
-                Ein Ticket für die Copa kannst du Dir im <a href="dartnet.html"><strong>Dartnet</strong></a> ziehen.
-            </p>
-        </div>
-    </section>
-
-   
-   
 
     <section class="section-fe feature">
         <h1 style="text-align: center">Where Do You Want to Go Next?</h1>
@@ -108,42 +90,6 @@
             <a href="team.html"><div class="FixedSize"></div>
             <h6>About Us</h6></a>
         </div>
-    </section>
-
-    <section class="section-bannerMiddle">
-        <div>
-            <h4>Nature could be</h4>
-            <h2>Healthy</h2>
-        </div>
-    </section>
-
-   
-        
-        <section class="section-banner banner2 bannerValues">
-            
-            <div class="banner-box banner-box1 CaptureBanner">
-                <div>
-                    
-                    <h4>Dry Areas</h4>
-                    <h2>Desert</h2>
-                </div>
-                
-                <!-- <button class="normal">Get a Ticket</button> -->
-            </div>
-            <div class="banner-box banner-box2 CaptureBanner">
-                <div>
-                    
-                    <h4>Melting</h4>
-                    <h2>Iceberg</h2>
-                </div>
-                
-                <!-- <button class="normal">Get a Ticket</button> -->
-            </div>
-        </section>
-
-       
-    
-        
     </section>
 
     <section class="section-fe newsletter">
