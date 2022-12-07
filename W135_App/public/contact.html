@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Scripts/navigation.js" defer></script>
+    <script src="Scripts/contact.js" defer></script>
+    <script src="https://kit.fontawesome.com/f75b4eb6a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="containerForm ">
+        <fieldset>
+            <legend>Contact form <i class="fa-solid fa-address-book"> </i></legend>
+
+            <form id="form" action="" method="post">
+                <p>required information is marked with an asterisk (*)</p>
+                <label for ="firstName">First Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="firstName" name="First Name" placeholder="Your Name" required>
+                <label for ="lastName">Last Name* <i class="fa fa-user"> :</i></label>
+                <input type="text" id="lastName" name="Last Name" placeholder="Your Name" required>
+                <label for ="email">Email* <i class="fa-regular fa-envelope"> :</i></label>
+                <input type="email" id="email" name="E-Mail" placeholder="Email id" required>
+                <label for ="phone">Phone* <i class="fa fa-phone"> :</i></label>
+                <input type="text" id="phone" name="Phone Number" placeholder="Phone no." required>
+                <label for ="message">Message* <i class="fa-regular fa-message"> :</i></label>
+                <textarea type="text" id="message" rows="4" name="Message" placeholder="How can we help you?" required></textarea>
+                <button type="submit" value="Send Now" id="submit">Send</button>
+            </form>
+
+            <p id="post-response"></p>
+        </fieldset>
+    </section>
+
+</body>
+</html>
